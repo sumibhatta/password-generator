@@ -1,0 +1,171 @@
+/* For dark mode */
+.dark {
+    background: #212121;
+}
+
+.dark p,
+.dark h3,
+.dark #number {
+    color: white;
+}
+
+.dark .toggle-button.active> .circle{
+    margin-left: 28px;
+    background: #212121;
+}
+/* For dark mode */
+
+
+.main {
+    margin: 2% auto;
+    display: table;
+    /* border: 1px solid #ff6347; */
+
+}
+
+/* header */
+.header {
+    padding: 0 0 51px 0;
+}
+
+/* Content */
+.content {
+    margin: 20px 0;
+}
+
+/* Main Title */
+.main-title {
+    float: left;
+    font-size: 1.5rem;
+    padding: 0 127px;
+    font-weight: normal;
+}
+
+/* Toggle Dark Bright Mode */
+#toggle-dark {
+    visibility: hidden;
+}
+
+#toggle-this {
+    border: 2px solid #ff6347;
+    border-radius: 5px;
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+#toggle-this>img {
+    color: tomato;
+    padding: 6px;
+}
+
+/* Content Title */
+.content-title {
+    float: left;
+    width: 76%;
+}
+
+/* SLider */
+#slider {
+    width: 64%;
+    margin: 0 20px;
+    appearance: none;
+    border: 2px solid tomato;
+    border-radius: 25px;
+    background: transparent;
+}
+
+#slider:hover {
+    cursor: pointer;
+    opacity: 2;
+}
+
+
+#slider::-webkit-slider-thumb {
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid tomato;
+}
+
+#slider::-moz-range-thumb {
+    width: 30px;
+    height: 30px;
+    background-color: tomato;
+    border: 2px solid tomato;
+    border-radius: 25px;
+    margin: 0 10px;
+}
+
+/*
+.slider-circle {
+    height: 23px;
+    display: inline-block;
+    width: 23px;
+    margin: 1px 3px;
+    border-radius: 50%;
+    background: tomato;
+} */
+
+.slider-text {
+    width: auto;
+}
+
+#number {
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    float: right;
+    padding: 5px 20px;
+}
+
+
+/* TOggle on off */
+.toggle-button {
+    float: right;
+    background-color: transparent;
+    width: 70px;
+    height: 40px;
+    border-radius: 25px;
+    padding: 4px 6px;
+    border: 1px solid tomato;
+
+}
+.toggle-button.active{
+    background: tomato;
+}
+
+.toggle-button.active> .circle{
+    margin-left: 28px;
+    background: #fff;
+}
+
+.toggle-button>.circle {
+    height: 30px;
+    width: 30px;
+    display: inline-block;
+    background-color: tomato;
+    border-radius: 50%;
+}
+
+/* Button */
+.button {
+    background: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    padding: 2% 5%;
+}
+
+/* generated text */
+.generated {
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}

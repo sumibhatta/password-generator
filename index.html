@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <main class="main">
+        <!-- Header -->
+        <header class="header">
+            <h3 class="main-title">
+                Password Generator
+            </h3>
+            <input type="checkbox" name="toggle-dark" id="toggle-dark">
+            <label for="toggle-dark" id="toggle-this">
+                <img src="./img/night-mode.svg" alt="night-mode-toggle">
+            </label>
+        </header>
+
+        <!-- Content -->
+        <div class="content clearfix">
+            <!-- Slider -->
+            <p class="content-title slider-text">Length</p><input type="range" name="slider" id="slider" min="2" max="32" value="2" placeholder="2"><span id="number"></span>
+        </div>
+        <div class="content clearfix">
+            <!-- 1 -->
+            <p class="content-title">Lowercase Letters</p><span class="toggle-button active" id="lowercase"><span class="circle"></span></span>
+        </div>
+        <div class="content clearfix">
+            <!-- 2 -->
+            <p class="content-title">Uppercase Letters</p><span class="toggle-button active" id="uppercase"><span class="circle"></span></span>
+        </div>
+        <div class="content clearfix">
+            <!-- 3 -->
+            <p class="content-title">Numbers</p><span class="toggle-button" id="numbers"><span class="circle"></span></span>
+        </div>
+        <div class="content clearfix">
+            <!-- 4 -->
+            <p class="content-title">Symbols</p><span class="toggle-button" id="symbols"><span class="circle"></span></span>
+        </div>
+
+        <!-- Button -->
+        <button class="button" id="generate">Generate</button>
+
+        <div class="content clearfix hidden">
+            <!-- 5 -->
+            <p class="generated" id="generated"></p>
+        </div>
+
+        <!-- Copy Button -->
+        <button class="button copy-button hidden" id="copy-text">Copy</button>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

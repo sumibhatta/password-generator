@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.25rem;
+    font-family: monospace;
+}
+
+ul {
+	list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.clearfix::after, .clearfix::before {
+    clear: both;
+    content: "";
+    display: table;
+  }
+
+
+  button:hover{
+      cursor: pointer;
+      background-color: rgb(252, 63, 30);
+  }
